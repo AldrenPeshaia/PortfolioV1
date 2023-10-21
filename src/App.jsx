@@ -1,16 +1,20 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Banner from "./components/Banner";
+import Feature from "./components/Feature";
+import Projects from "./components/Projects";
 
 function App() {
   return (
-    <>
-      <BrowserRouter>
-        <Routes>
-          <Route />
-          <Route />
-          <Route />
-        </Routes>
-      </BrowserRouter>
-    </>
+    <main className="font-bodyFont w-full h-auto bg-bodyColor text-lightText">
+      <Navbar />
+      <div className="px-4">
+        <div className="max-w-screen-xl mx-auto">
+          <Banner />
+          <Feature />
+          <Projects />
+        </div>
+      </div>
+    </main>
   );
 }
 
