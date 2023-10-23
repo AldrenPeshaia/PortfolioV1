@@ -15,15 +15,17 @@ const LeftBanner = () => {
   return (
     <FadeIn className="w-full lgl:w-1/2 flex flex-col gap-20">
       <div className="flex flex-col gap-5">
-        <h4 className="text-black text-lg font-semibold">WELCOME TO MY PAGE</h4>
+        <h4 className="text-gray-200 text-lg font-semibold">
+          WELCOME TO MY PAGE
+        </h4>
         <h1 className="text-6xl font-bold text-white">
-          <span className="text-[#003e3e] capitalize">Aldren Peshaia</span>
+          <span className="text-gray-200 capitalize">Aldren Peshaia</span>
         </h1>
         <h2 className="text-4xl font-bold text-designColor">
           <span>{text}</span>
           <Cursor cursorStyle="|" cursorColor="#ff014f" />
         </h2>
-        <p className="text-base font-bodyFont text-gray-700/75 leading-6 tracking-wider">
+        <p className="text-base font-bodyFont text-white leading-6 tracking-wider">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
