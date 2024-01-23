@@ -1,7 +1,7 @@
 import Card from "./Card";
 import Title from "./Title";
 import { FadeIn } from "./FadeIn";
-import { FaReact, FaJava, FaMobile, FaGlobe } from "react-icons/fa";
+import { FaReact, FaJava, FaMobile, FaGlobe, FaDatabase } from "react-icons/fa";
 
 import { FiFigma } from "react-icons/fi";
 
@@ -11,7 +11,7 @@ const Feature = () => {
       id="features"
       className="w-full py-20 border-b-[1px] border-b-gray-700">
       <FadeIn>
-        <Title title="Features" des="What I Do" />
+        <Title des="What I Do" />
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-20 ">
           <Card
             title="Webb Development"
@@ -20,7 +20,12 @@ const Feature = () => {
           />
           <Card
             title="Database"
-            des="I can create databases with using spring and also use Mysql to handle the database with."
+            des="Good experience within postgres and mongoDB"
+            icon={<FaDatabase />}
+          />
+          <Card
+            title="Backend"
+            des="Really good experience to create backend with spring boot and express.js"
             icon={<FaJava />}
           />
           <Card
@@ -30,15 +35,10 @@ const Feature = () => {
           />
           <Card
             title="React Native"
-            des="Currently learning React Native (will be a actuall feature in the future) "
+            des="Currently learning React Native (will be an actuall feature in the future) "
             icon={<FaMobile />}
           />
-          <Card />
-          <Card
-            title="Hosting Websites"
-            des="Hosting websites online, i charge for the payment the customer wants to choose."
-            icon={<FaGlobe />}
-          />
+          <Card title="Hosting Websites" des="" icon={<FaGlobe />} />
         </div>
       </FadeIn>
     </section>

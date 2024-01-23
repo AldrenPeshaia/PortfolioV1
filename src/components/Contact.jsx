@@ -2,6 +2,7 @@ import { useState } from "react";
 import ContactLeft from "./ContactLeft";
 import Title from "./Title";
 import { FadeIn } from "./FadeIn";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [username, setUsername] = useState("");
@@ -22,6 +23,7 @@ const Contact = () => {
 
   const handleSend = (e) => {
     e.preventDefault();
+
     if (username === "") {
       setErrMsg("Name is required!");
     } else if (phoneNumber === "") {
@@ -78,6 +80,7 @@ const Contact = () => {
                         "outline-designColor"
                       } contactInput`}
                       type="text"
+                      name="name"
                     />
                   </div>
                   <div className="w-full lgl:w-1/2 flex flex-col gap-4">
@@ -92,6 +95,7 @@ const Contact = () => {
                         "outline-designColor"
                       } contactInput`}
                       type="text"
+                      name="Phone_Number"
                     />
                   </div>
                 </div>
@@ -107,6 +111,7 @@ const Contact = () => {
                       "outline-designColor"
                     } contactInput`}
                     type="email"
+                    name="email"
                   />
                 </div>
                 <div className="flex flex-col gap-4">
@@ -121,6 +126,7 @@ const Contact = () => {
                       "outline-designColor"
                     } contactInput`}
                     type="text"
+                    name="subject"
                   />
                 </div>
                 <div className="flex flex-col gap-4">
@@ -134,7 +140,8 @@ const Contact = () => {
                       errMsg === "Message is required!" && "outline-designColor"
                     } contactTextArea`}
                     cols={30}
-                    rows={8}></textarea>
+                    rows={8}
+                    name="message"></textarea>
                 </div>
                 <div className="w-full">
                   <button

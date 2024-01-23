@@ -3,6 +3,8 @@ import ProjectsCard from "./ProjectsCard";
 import projectOne from "../assets/images/projects/projectOne.jpg";
 import projectTwo from "../assets/images/projects/projectTwo.jpg";
 import projectThree from "../assets/images/projects/projectThree.jpg";
+import projectFour from "../assets/images/projects/projectFour.png";
+import projectFive from "../assets/images/projects/projectFive.png";
 import { FadeIn } from "./FadeIn";
 
 const Projects = () => {
@@ -29,6 +31,16 @@ const Projects = () => {
             title="Spring database"
             des="School work when me and my group created a working database with everything that was needed."
             src={projectThree}
+          />
+          <ProjectsCard
+            title="Bilbay Fullstack Application"
+            des="Basic auction website with backend features. This was done with my school group."
+            src={projectFour}
+          />
+          <ProjectsCard
+            title="Healthcare Fullstack Application"
+            des="Health website with backend features like booking, scheduling, authenticate and user roles. This was done with my school group."
+            src={projectFive}
           />
         </div>
       </FadeIn>

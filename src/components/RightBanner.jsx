@@ -1,15 +1,15 @@
-import BannerImg from "../assets/images/BannerImg.png";
+import AldrenPicture from "../assets/images/AldrenPicture.png";
 import { FadeIn } from "./FadeIn";
 
 const RightBanner = () => {
   return (
     <FadeIn className="w-full lgl:w-1/2 flex justify-center items-center relative">
       <img
-        className="w-[300px] h-[400px] lgl:w-[500px] lgl:h-[680px] z-10"
-        src={BannerImg}
-        alt="BannerImg"
+        className="w-[350px] h-[250px] lgl:w-[500px] lgl:h-[400px] z-10"
+        src={AldrenPicture}
+        alt=""
       />
-      <div className="absolute bottom-0 w-[350px] h-[300px] lgl:w-[500px] lgl:h-[500px] bg-gradient-to-r from-[#1e2024] to-[#0B1120] shadow-shadowOne flex justify-center items-center"></div>
+      <div className="absolute bottom-0 w-[350px] h-[250px] lgl:w-[500px] lgl:h-[400px] bg-gradient-to-r from-[#1e2024] to-[#0B1120] shadow-shadowOne flex justify-center items-center"></div>
     </FadeIn>
   );
 };

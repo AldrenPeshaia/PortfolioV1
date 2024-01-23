@@ -35,7 +35,7 @@ const LeftBanner = () => {
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
       </div>
-      <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between">
+      <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0  justify-between">
         <div>
           <h2 className="text-base uppercase font-titleFont mb-4">
             My Socials
