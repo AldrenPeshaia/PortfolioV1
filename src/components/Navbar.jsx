@@ -41,7 +41,6 @@ const Navbar = () => {
             <div className="flex flex-col gap-8 py-2 relative">
               <div>
                 <img className="w-32 " src={logo} alt="logo" />
-                <p className="text-sm text-white mt-2">Lorem ipsum</p>
               </div>
               <ul className="flex flex-col gap-4">
                 {navLinksdata.map((item) => (

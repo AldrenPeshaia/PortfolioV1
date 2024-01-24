@@ -5,7 +5,7 @@ import { FadeIn } from "./FadeIn";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
-  const [username, setUsername] = useState("");
+  const [name, setName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
@@ -13,40 +13,45 @@ const Contact = () => {
   const [errMsg, setErrMsg] = useState("");
   const [successMsg, setSuccessMsg] = useState("");
 
-  // ========== Email Validation start here ==============
-  const emailValidation = (email) => {
-    return String(email)
-      .toLocaleLowerCase()
-      .match(/^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+/);
-  };
-  // ========== Email Validation end here ================
-
-  const handleSend = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (username === "") {
-      setErrMsg("Name is required!");
-    } else if (phoneNumber === "") {
-      setErrMsg("Phone number is required!");
-    } else if (email === "") {
-      setErrMsg("Please give your Email!");
-    } else if (!emailValidation(email)) {
-      setErrMsg("Give a valid Email!");
-    } else if (subject === "") {
-      setErrMsg("Plese give your Subject!");
-    } else if (message === "") {
-      setErrMsg("Message is required!");
-    } else {
-      setSuccessMsg(
-        `Thank you dear ${username}, Your Messages has been sent Successfully!`
-      );
-      setErrMsg("");
-      setUsername("");
-      setPhoneNumber("");
-      setEmail("");
-      setSubject("");
-      setMessage("");
+    if (!name || !phoneNumber || !email || !subject || !message) {
+      setErrMsg("All fields are required!");
+      setSuccessMsg("");
+      return;
     }
+
+    const serviceId = "service_jgiuslu";
+    const templateId = "template_yaqpek7";
+    const publicKey = "xYoemwq9_R1WxPVml";
+
+    const templateParams = {
+      name: name,
+      phone_Number: phoneNumber,
+      email: email,
+      to_name: "Aldren Peshaia",
+      subject: subject,
+      message: message,
+    };
+
+    emailjs
+      .send(serviceId, templateId, templateParams, publicKey)
+      .then((response) => {
+        console.log("Email sent successfully", response);
+        setName("");
+        setPhoneNumber("");
+        setEmail("");
+        setSubject("");
+        setMessage("");
+        setSuccessMsg("Email sent successfully!");
+        setErrMsg("");
+      })
+      .catch((error) => {
+        console.log("Error sending email", error);
+        setErrMsg("Error sending email");
+        setSuccessMsg("");
+      });
   };
 
   return (
@@ -62,22 +67,16 @@ const Contact = () => {
             <ContactLeft />
             <div className="w-full lgl:w-[60%] h-full py-10  bg-gradient-to-r from-[#949b97] to-[#000000] flex flex-col gap-8 p-4 lgl:p-8 rounded-lg shadow-shadowOne">
               <form className="w-full flex flex-col gap-4 lgl:gap-6 py-2 lgl:py-5">
-                {successMsg && (
-                  <p className="py-3  bg-gradient-to-r from-[#949b97] to-[#000000] shadow-shadowOne text-center text-green-500 text-base tracking-wide animate-bounce">
-                    {successMsg}
-                  </p>
-                )}
                 <div className="w-full flex flex-col lgl:flex-row gap-10">
                   <div className="w-full lgl:w-1/2 flex flex-col gap-4">
                     <p className="text-sm text-white uppercase tracking-wide">
                       Your name
                     </p>
                     <input
-                      onChange={(e) => setUsername(e.target.value)}
-                      value={username}
+                      onChange={(e) => setName(e.target.value)}
+                      value={name}
                       className={`${
-                        errMsg === "Username is required!" &&
-                        "outline-designColor"
+                        errMsg === "Name is required!" && "outline-designColor"
                       } contactInput`}
                       type="text"
                       name="name"
@@ -145,7 +144,7 @@ const Contact = () => {
                 </div>
                 <div className="w-full">
                   <button
-                    onClick={handleSend}
+                    onClick={handleSubmit}
                     className="w-full h-12 bg-[#141518] rounded-lg text-base text-gray-400 tracking-wider uppercase hover:text-white duration-300 hover:border-[1px] hover:border-designColor border-gray-600 border">
                     Send Message
                   </button>

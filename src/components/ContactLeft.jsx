@@ -7,8 +7,8 @@ const ContactLeft = () => {
         <h3 className="text-3xl font-bold text-white">Aldren Peshaia</h3>
         <p className="text-lg font-normal text-white">Full Stack Developer</p>
         <p className="text-base text-white tracking-wide">
-          You can contact me by typing in the input or either in my socials. I'm
-          gonna try my best to answer as soon as possible.
+          You can contact me by typing in the inpus or in my socials down below.
+          I'm gonna try my best to answer as soon as possible.
         </p>
 
         <p className="text-base text-white flex items-center gap-2">

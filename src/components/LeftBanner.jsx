@@ -25,15 +25,30 @@ const LeftBanner = () => {
           <span>{text}</span>
           <Cursor cursorStyle="|" cursorColor="#ff014f" />
         </h2>
-        <p className="text-base font-bodyFont text-white leading-6 tracking-wider">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+        <div className="text-base font-bodyFont text-white leading-6 tracking-wider space-y-4">
+          <p>
+            I was born in 2002 in Finland, and in 2006 both my parents moved to
+            Sweden for a better future.
+          </p>
+          <p>
+            I always had a passion for technology when I was younger. Later at
+            my age, I learned to code with Java, and that became my hobby.
+          </p>
+          <p>
+            During my high school days, I learned a lot about web development,
+            using basic HTML & CSS. I also learned C# during my high school
+            years.
+          </p>
+          <p>
+            Currently, I'm studying at Gothenburg as a Java Developer. We use a
+            lot of JavaScript/React for our frontend and Java to manage the
+            backend.
+          </p>
+          <p>
+            Today i like to invest most of my time in learing PostgreSQL, it's
+            really enjoyable to spend time to know the power of databases.
+          </p>
+        </div>
       </div>
       <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0  justify-between">
         <div>
