@@ -1,7 +1,14 @@
 import Card from "./Card";
 import Title from "./Title";
 import { FadeIn } from "./FadeIn";
-import { FaReact, FaJava, FaMobile, FaGlobe, FaDatabase } from "react-icons/fa";
+import {
+  FaReact,
+  FaJava,
+  FaMobile,
+  FaGlobe,
+  FaDatabase,
+  FaAws,
+} from "react-icons/fa";
 
 import { FiFigma } from "react-icons/fi";
 
@@ -14,8 +21,8 @@ const Feature = () => {
         <Title des="What I Do" />
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-20 ">
           <Card
-            title="Webb Development"
-            des="javascript, html & css is what i usually create the websites with but I can also create website with using react & tailwindcss.  "
+            title="Web Development"
+            des="Javascript, html & css is what i usually create the websites with but I can also create website with using react & tailwindcss.  "
             icon={<FaReact />}
           />
           <Card
@@ -38,7 +45,11 @@ const Feature = () => {
             des="Currently learning React Native (will be an actuall feature in the future) "
             icon={<FaMobile />}
           />
-          <Card title="Hosting Websites" des="" icon={<FaGlobe />} />
+          <Card
+            title="AWS"
+            des="Hosting services, storage etc at Amazon Web Service."
+            icon={<FaAws />}
+          />
         </div>
       </FadeIn>
     </section>

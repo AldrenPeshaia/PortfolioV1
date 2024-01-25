@@ -40,7 +40,7 @@ const LeftBanner = () => {
             years.
           </p>
           <p>
-            Currently, I'm studying at Gothenburg as a Java Developer. We use a
+            Currently I'm studying at Gothenburg as a Java Developer. We use a
             lot of JavaScript/React for our frontend and Java to manage the
             backend.
           </p>
