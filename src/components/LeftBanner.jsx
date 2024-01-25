@@ -27,26 +27,25 @@ const LeftBanner = () => {
         </h2>
         <div className="text-base font-bodyFont text-white leading-6 tracking-wider space-y-4">
           <p>
-            I was born in 2002 in Finland, and in 2006 both my parents moved to
+            I was born in 2002 in Finland, and in 2006 my parents moved to
             Sweden for a better future.
           </p>
           <p>
-            I always had a passion for technology when I was younger. Later at
-            my age, I learned to code with Java, and that became my hobby.
+            I always had a passion for technology when I was younger. As I got
+            older, I learned to code with Java, and that became my hobby.
           </p>
           <p>
-            During my high school days, I learned a lot about web development,
-            using basic HTML & CSS. I also learned C# during my high school
-            years.
+            During my high school years, I learned a lot about web development,
+            I learned basic HTML, CSS & C#.
           </p>
           <p>
-            Currently I'm studying at Gothenburg as a Java Developer. We use a
-            lot of JavaScript/React for our frontend and Java to manage the
-            backend.
+            I'm currently studying in Gothenburg to become a Java Developer. We
+            use a lot of JavaScript/React for our frontend and Java to manage
+            the backend.
           </p>
           <p>
-            Today i like to invest most of my time in learing PostgreSQL, it's
-            really enjoyable to spend time to know the power of databases.
+            Today I like to invest most of my time in learing PostgreSQL, I find
+            it enjoyable to spend time to know the power of databases.
           </p>
         </div>
       </div>

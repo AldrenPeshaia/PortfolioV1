@@ -11,34 +11,33 @@ const Education = () => {
       <div>
         <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
           <p className="text-sm text-designColor tracking-[4px]">2018 - 2024</p>
-          <h2 className="text-3xl md:text-4xl font-bold">Education degree</h2>
+          <h2 className="text-3xl md:text-4xl font-bold">Education </h2>
         </div>
         <div className="mt-6 lgl:mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
           <ResumeCard
-            title="Electricity & Energy it"
-            subTitle="High School realgymnasiet (2018 - 2021)"
+            title="Electricity & Energy IT"
+            subTitle="Realgymnasiet high school (2018 - 2021)"
             result="4.99/5"
-            des="We had alot of web desgins in our classes, such as html & css."
+            des="We had a lot of web desgins in our classes, such as HTML and CSS."
           />
           <ResumeCard
             title="Base year"
-            subTitle="High School realgymnasiet (2021 - 2022)"
+            subTitle="Linköping University (2021 - 2022)"
             result="3.55/5"
-            des="We only had a few courses (Math, physics and more)"
+            des="During this year I studied maths, physics and chemistry."
           />
           <ResumeCard
             title="Java Developer"
             subTitle="Gothenburg Teknikhögskola (2022 - 2024)"
             result="5.00/5"
-            des="My current Education, we have alot of react, javascript, html & css and also alot of databases in this Education."
+            des="My current education. We mostly use React, Javascript, HTML and CSS, and manage the backend with Spring Boot. "
           />
         </div>
       </div>
-      {/* part Two */}
 
       <div>
         <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
-          <p className="text-sm text-designColor tracking-[4px]">2022 - 2022</p>
+          <p className="text-sm text-designColor tracking-[4px]">2023 - 2024</p>
           <h2 className="text-3xl md:text-4xl font-bold">Job Experience</h2>
         </div>
         <div className="mt-6 lgl:mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">

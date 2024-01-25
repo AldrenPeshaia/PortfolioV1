@@ -19,27 +19,27 @@ const Projects = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14">
           <ProjectsCard
             title="Github Finder"
-            des=" Using React & tailwindcss i created a github finder."
+            des=" Using React and Tailwind CSS I created a GitHub finder."
             src={projectOne}
           />
           <ProjectsCard
             title="Feedback App"
-            des=" Using React & css i created a feedback app, where i can rate and also comment feedback on my website."
+            des=" Using React and CSS I created a feedback app where I can rate and also comment feedback on my website."
             src={projectTwo}
           />
           <ProjectsCard
-            title="Spring database"
-            des="School work when me and my group created a working database with everything that was needed."
+            title="Spring Boot backend and postgresql"
+            des="Schoolwork when my group and I created a working database with everything that was needed."
             src={projectThree}
           />
           <ProjectsCard
             title="Bilbay Fullstack Application"
-            des="Basic auction website with backend features. This was done with my school group."
+            des="Basic auction website with backend features. This was done together with my school group."
             src={projectFour}
           />
           <ProjectsCard
             title="Healthcare Fullstack Application"
-            des="Health website with backend features like booking, scheduling, authenticate and user roles. This was done with my school group."
+            des="Healthcare website with backend features inclouding booking, scheduling, authenticate and user roles. This was done together with my school group."
             src={projectFive}
           />
         </div>
