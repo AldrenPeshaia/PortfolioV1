@@ -50,7 +50,7 @@ const Education = () => {
           <ResumeCard
             title="Summer job Web Developer"
             subTitle="Nordic Executive Medicine"
-            result="SWEDEN"
+            result="Sweden"
             des="Worked on their portal with using Reactjs and Tailwindcss. Had my own responsibilies alot in this project."
           />
         </div>
